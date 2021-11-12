@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0px;
+}
+
+@import "./config.scss";
+@import "./app.scss";

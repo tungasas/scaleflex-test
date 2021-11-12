@@ -1,0 +1,58 @@
+.chart-config {
+  .config-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      flex: 1 1 50%;
+    }
+
+    &__left {
+      padding-right: 2rem;
+    }
+
+    .config-item {
+      + .config-item {
+        padding-top: 0.75rem;
+      }
+
+      &.color-picker {
+        .config-item__name {
+          padding-bottom: 0.75rem;
+        }
+      }
+
+      label {
+        padding-right: 0.5rem;
+      }
+
+      select {
+        padding: 0.1rem 0.3rem;
+        border-radius: 0.22rem;
+        border: 2px solid #d2dcfc;
+        &:focus-visible,
+        &:focus {
+          border-color: #84a0ff;
+        }
+      }
+
+      button {
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+        background: white;
+        border-radius: 0.44rem;
+        border: 2px solid #d2dcfc;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          border-color: #84a0ff;
+        }
+
+        &:active {
+          color: #59a1fa;
+        }
+      }
+    }
+  }
+}
